@@ -26,3 +26,12 @@ npx prisma generate
 
 
 # Stage
+
+
+## sections
+
+resumen de algunos secciones practicadas y especificadas en su rama
+
+### server actions [serverActions]
+
+pruebas de los server actions y el hook de optimistic updates
