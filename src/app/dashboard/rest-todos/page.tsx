@@ -1,20 +1,25 @@
 
-import { TodosGrid } from '@/app/todos/components'
+import { NewTodo, TodosGrid } from '@/app/todos/components'
 import prisma from '@/lib/prisma'
 
-export const metadata ={
+export const metadata = {
   title: 'tasks list',
   description: 'solo es un listado de tareas'
 }
 
-const  RestTodosPage = async () => {
-  
-  // ! de este modo podremos aprobechar en cierto modo los server actions...
-  const todos = await prisma.todo.findMany({orderBy: {description: 'asc'}}) // ? a mi parecer esto es reaparecer una practica que se busca eliminar
+const RestTodosPage = async () => {
 
-    {/* *TODO: formulacion para agregar Todo's */}
+  // ! de este modo podremos aprobechar en cierto modo los server actions...
+  const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } }) // ? a mi parecer esto es reaparecer una practica que se busca eliminar
+
+  {/* *TODO: formulacion para agregar Todo's */ }
   return (
-    <TodosGrid todos={todos} />
+    <>
+      <div className="w-full px-3 mx-5 mb-5">
+        <NewTodo />
+      </div>
+        <TodosGrid todos={todos} />
+    </>
   )
 }
 
