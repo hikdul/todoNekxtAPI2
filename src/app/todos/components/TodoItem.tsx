@@ -3,8 +3,10 @@ import { Todo } from "@prisma/client"
 import styles from './TodoItem.module.css'
 import { IoCheckboxOutline, IoSquareOutline } from "react-icons/io5"
 
+
 export const TodoItem = ({todo, toggleTodo}: props) => {
   const { id, description, complete} = todo
+  
 
   return (
     <div className={complete ? styles.todoDone : styles.todoPending}>

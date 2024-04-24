@@ -7,6 +7,9 @@ export const metadata = {
   description: 'solo es un listado de tareas'
 }
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 const RestTodosPage = async () => {
 
   // ! de este modo podremos aprobechar en cierto modo los server actions...
