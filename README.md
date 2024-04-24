@@ -35,3 +35,13 @@ resumen de algunos secciones practicadas y especificadas en su rama
 ### server actions [serverActions]
 
 pruebas de los server actions y el hook de optimistic updates
+
+### Cookies - server y client side [cookies]
+
+en esta rama se observa a profundidad los siguientes elementos:
+
+* Cookies del lado del servidor
+* Cookies del lado del cliente
+* Carrito de compras
+* Manipulación de cookies
+
