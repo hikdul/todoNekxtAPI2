@@ -9,7 +9,7 @@ import { useState } from "react"
     tabOptions?: number[]
  }
  
- export const TabBar = ({currentTab = 1, tabOptions=[1,2,3,4,5]}:props) => {
+ export const TabBar = ({currentTab = 1, tabOptions=[1,2,3,4]}:props) => {
     
     
     const [selected, setselected] = useState(currentTab)

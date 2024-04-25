@@ -1,6 +1,6 @@
 
 import  { CiLogout } from 'react-icons/ci';
-import {  IoCalendarOutline, IoCheckboxOutline, IoSaveOutline } from 'react-icons/io5';
+import {  IoBasketballOutline, IoBookmarksOutline, IoCalendarOutline, IoCheckboxOutline, IoSaveOutline } from 'react-icons/io5';
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
@@ -27,6 +27,11 @@ const menuItems =[
     icon: <IoSaveOutline width={30}/>,
     text: 'Cookies',
     path: '/dashboard/cookies'
+  },
+  {
+    icon: <IoBasketballOutline width={30}/>,
+    text: 'Cookies 2',
+    path: '/dashboard/products'
   }
 ]
 
