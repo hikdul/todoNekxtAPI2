@@ -1,11 +1,10 @@
 
-import {  CiBookmarkCheck, CiLogout } from 'react-icons/ci';
-import {  IoCalendarOutline, IoCheckboxOutline } from 'react-icons/io5';
+import  { CiLogout } from 'react-icons/ci';
+import {  IoCalendarOutline, IoCheckboxOutline, IoSaveOutline } from 'react-icons/io5';
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import { SidebarItem } from './SidebarItem';
-import { title } from 'process';
 
 
 const menuItems =[
@@ -19,11 +18,15 @@ const menuItems =[
     text: 'Rest TODOS',
     path: '/dashboard/rest-todos'
   },
-  
   {
     icon: <IoCalendarOutline width={30}/>,
     text: 'Server Actions',
     path: '/dashboard/server-todos'
+  },
+  {
+    icon: <IoSaveOutline width={30}/>,
+    text: 'Cookies',
+    path: '/dashboard/cookies'
   }
 ]
 

@@ -12,7 +12,7 @@ export default function DashboardLayout({
             <Sidebar />
             <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] min-h-screen">
                 <TopMenu />
-                <div className="px-6 pt-7">
+                <div className="px-6 pt-7 bg-white p-1 m-1 pb-5 rounded">
                     {children}
                 </div>
             </div>
