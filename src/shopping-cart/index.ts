@@ -1,2 +1,3 @@
 
-export { ItemCard } from "./itemCard";
+export { ItemCard } from "./components/ItemCart";
+
