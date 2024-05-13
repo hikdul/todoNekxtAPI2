@@ -45,3 +45,20 @@ en esta rama se observa a profundidad los siguientes elementos:
 * Carrito de compras
 * Manipulación de cookies
 
+### auth
+
+Trabajaremos con authenticacion de usuarios, aunque no es como normalmente yo trabajaria con esto, si se puede decir que estamos en el momento de entender un poco como hacerlo y lo mas importante los saltos entre paginas. Temas que se veran aca son:
+
+
+1. Auth.js
+2. Proveedores
+3. Google
+4. Github
+5. Credenciales personalizadas
+6. Encriptación de contraseña
+7. Relaciones de base de datos
+8. Sesión de usuario
+9. Server y Client side validation
+10. Campos adicionales de usuario
+11. Modificación global de usuario de Auth.js
+
