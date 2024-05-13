@@ -8,6 +8,7 @@ import { IoAddCircleOutline, IoRemove } from "react-icons/io5";
 
 import { useRouter } from "next/navigation";
 import { Product } from "@/app/products/data/products";
+import { addProductToCart, substractProductFromCart } from "../actions/shopingCartActions";
 
 interface Props {
     product: Product;
@@ -17,14 +18,17 @@ interface Props {
 const ItemCard = ({ product, quantity }: Props) => {
 
     const router = useRouter();
-
+    
+    
     function onAddToCart() {
-        //TODO: addProductToCart(product.id);
+        //!: addProductToCart(product.id);
+        addProductToCart(product.id)
         router.refresh();
     }
 
     function onRemoveItem() {
-        //TODO: removeSingleItemFromCart(product.id);
+        //!: removeSingleItemFromCart(product.id);
+        substractProductFromCart(product.id)
         router.refresh();
     }
 
@@ -68,12 +72,16 @@ const ItemCard = ({ product, quantity }: Props) => {
 
                 <div className="flex p-5 items-center justify-center" >
                     <button
+                        title="quitar"
                         onClick={onAddToCart}
                         className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >
                         <IoAddCircleOutline size={25} />
                     </button>
-                    < span className="text-2xl text-white mx-10" > {quantity} < /span>
+                    <span className="text-2xl text-white mx-10">
+                        {quantity}
+                    </span>
                         < button
+                                title="agregar"
                             onClick={onRemoveItem}
                             className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800" >
                             <IoRemove size={25} />

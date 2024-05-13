@@ -10,7 +10,8 @@ import { CiChat1, CiMenuBurger, CiSearch, CiShoppingBasket } from 'react-icons/c
     let items = 0;
     
     Object.values(cart).forEach(value =>{
-      items += value as number
+      if(value as number > 0)
+        items += value as number
     })
     
     return items
